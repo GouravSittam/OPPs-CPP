@@ -1,0 +1,117 @@
+OPERATOR OVERLOADING(9/26/2023)
+
+1) c++ has ablity to provide the opreaters with the speacial meaning for a datatype.
+2) the machenism of giving such speacial meaning to an opreater is known as operator overloading.
+3) Operater overloading is an specific case of polymorphism.
+4) operater overloading prefers giving special meaning to an existing operator.
+5) In order to give aditional meaning to the operator we need to orload it by creating an operator function.
+6) i) An operator funcyion defines the operation that the overloader operter will perform when used with the objects of a relative class 
+   ii) A operater function can be member or non member (friend function)of a class
+
+outside 
+return type classname::operator #(argument list)
+{
+body------
+}
+
+7) We can overload all c++ operator except the following:
+those four are
+i)class access operator(. , *)
+ii)scope resolution operator (::)
+ii)size of operator(sizeof)
+iv)conditional operator (? :)
+
+
+                                                                   28/09/2023
+
+
+
+operator overloading using friend function
+
+. we will declare the operater function as a friend function inside the class as:
+       friend void operator#(argument list);
+. then we will define the function outside of the class as: void operator #(Argument_list){definition}
+        
+               AUTOMATIC TYPE CONVERSION
+
+. Auomatic type conversion by the c++ compiler from the type that doesn't fit, to the type wants
+
+. 4 types of situation might aries in the data type conversion:
+  . conversion from basic type to basic type 
+  . conversion from basic type to class type
+  . conversion from class type to basic type
+  . conversion from class type to class type(not in syllabus)
+
+	CLASS TYPE TO BASIC TYPE	
+
+constructor functiion does not support this operation
+. So c++ allow us to define an overloading casting operator that could be used to convert a class type data to basic type.
+. It is also known as conversion function
+. The casting operator function should satisy following 
+  	CONDITIONS
+. It must be a class member
+. It must not specify return type
+. It must not have any arguments
+
+
+					03/10/2023
+
+					INHERITANCE
+
+
+Types of inheritance
+1) Single inheritance(one base and one derived calss)
+2) Multiple inheritance(more than one base classes for one derived class)
+3) Hierarchical inheritance(More than one derived classes for one base class)
+4) Multilevel inheritance
+5) Hybrid inheritance(Combination of more than one types of inheritance)
+
+                                              ACCESS SPECIFIERS/VISIBILITY MODES/VISIBILITY LABELS IN C++
+
+private:private members are accessible inside the same class in which they are defined.
+protected:protected members are accessible inside base and derived class only.
+public:public members are accessible everywhere.
+
+Specifer   same class      derived class   anyother class    friend function    friend class
+class
+
+Private     yes             
+
+Protected   yes
+
+Public      yes
+
+
+
+Modes of inheritance or derivation modes
+
+. Private mode
+. public mode
+. protected mode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
